@@ -7,15 +7,18 @@ import Foundation
 class LightSwitch {
     
     var on: Bool = true
+    var dimmer: Int = 7
 }
 
 var livingRoomSwitch = LightSwitch()
 livingRoomSwitch.on
+livingRoomSwitch.dimmer
 //: ### Example 2: Strings and Characters
 var dollarSign: Character = "$"
 var myFirstSwiftString: String = "mo' money"
 var mySecondSwiftString: String = "mo' problems"
 var concatenatedString:String = myFirstSwiftString + ", " + mySecondSwiftString
+type(of: concatenatedString)
 
 //: ### Stay tuned for more on Optionals and Tuples in the upcoming lessons!
 
