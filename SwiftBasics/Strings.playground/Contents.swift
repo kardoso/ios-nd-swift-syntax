@@ -17,7 +17,7 @@ var jamesFavoriteBaseballTeam = "Atlanta Braves"
 
 var nWithTilde = "\u{006E}\u{0303}"
 nWithTilde.unicodeScalars.count
-nWithTilde.characters.count
+nWithTilde.count
 
 //: ## Emoji characters
 let similarTruth = "💰can't buy me 💖"
@@ -27,7 +27,7 @@ var characterPoorString = ""
 
 // And here's another 
 let potentialRichString = String()
-characterPoorString.characters
+characterPoorString
 
 //: ## String interpolation
 
@@ -42,17 +42,17 @@ doggyDiet = "\(dogName) eats 25lbs of dog food per month"
 //: ### String with variables and expression
 var lbsPerDay = 0.75
 var daysPerMonth:Double = 30.0
-doggyDiet = "\(dogName) eats ?lbs of dog food per month"
+doggyDiet = "\(dogName) eats \(lbsPerDay * daysPerMonth)lbs of dog food per month"
 
 var frankiePic = UIImage(named:"frankie.jpeg")!
 lbsPerDay = 0.25
 dogName = "Lil Frankie"
-doggyDiet = "\(dogName) eats ?lbs of dog food per month"
+doggyDiet = "\(dogName) eats \(lbsPerDay * daysPerMonth)lbs of dog food per month"
 //: ## A String isn't just a String
 
 //: ### Through the .characters property we can access an array of characters
 var password = "Meet me in St. Louis"
-for character in password.characters {
+for character in password {
     if character == "e" {
         print("found an e!")
     } else {
